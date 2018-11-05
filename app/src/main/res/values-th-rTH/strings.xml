@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Healthy</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="login_btn">เข้าสู่ระบบ</string>
+    <string name="userId">ชื่อผู้ใช้</string>
+    <string name="age">อายุ</string>
+    <string name="username">ชื่อ</string>
+    <string name="register">ลงทะเบียนบัญชีใหม่</string>
+    <string name="height">ความสูง (เซนติเมตร)</string>
+    <string name="weight">น้ำหนัก (กิโลกรัม)</string>
+    <string name="calculate">คำนวณ BMI</string>
+    <string name="back">กลับ</string>
+    <string name="save">บันทึก</string>
+    <string name="password_not_match">รหัสผ่านไม่ตรงกัน</string>
+</resources>

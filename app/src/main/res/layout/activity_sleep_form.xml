@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sleep.SleepFormActivity">
+
+    <Button
+        android:id="@+id/sleep_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="SAVE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_end" />
+
+    <EditText
+        android:id="@+id/sleep_date"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="date"
+        android:inputType="date"
+        android:textSize="24sp"
+        android:drawableLeft="@drawable/ic_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sleep_start"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/ic_clock"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="Bedtime"
+        android:inputType="time"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_date" />
+
+    <EditText
+        android:id="@+id/sleep_end"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/ic_clock"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="wakingtime"
+        android:inputType="time"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_start" />
+</android.support.constraint.ConstraintLayout>
