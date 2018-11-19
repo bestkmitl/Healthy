@@ -13,7 +13,7 @@
         android:layout_gravity="center"
         android:background="@color/colorPrimary"
         android:drawableLeft="@drawable/ic_back"
-        android:text="back"
+        android:text="Back"
         ></Button>
 
     <ListView
