@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.support.healthy_134.post.PostFragment;
 import com.example.support.healthy_134.sleep.SleepFragment;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -41,6 +42,7 @@ public class MenuFragment extends Fragment{
         menu.add("BMI");
         menu.add("Weight");
         menu.add("Sleep Time");
+        menu.add("Post");
         menu.add("Sign out");
 
         ArrayAdapter<String> menuAdapter = new ArrayAdapter<>(
@@ -54,8 +56,8 @@ public class MenuFragment extends Fragment{
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.d("MENU", "Click on menu = " + menu.get(position));
 
-                if(position < 3){
-                    Fragment fragment[] = {new BmiFragment(), new WeightFragment(), new SleepFragment()};
+                if(position < 4){
+                    Fragment fragment[] = {new BmiFragment(), new WeightFragment(), new SleepFragment(), new PostFragment()};
                     getActivity().getSupportFragmentManager()
                             .beginTransaction()
                             .replace(R.id.main_view, fragment[position])
